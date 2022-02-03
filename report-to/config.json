@@ -1,0 +1,20 @@
+{
+  "name": "Report-To",
+  "url": "https://github.com/mdegat01/addon-report-to",
+  "version": "edge",
+  "slug": "reportto",
+  "arch": ["aarch64", "amd64", "armv7", "armhf", "i386"],
+  "description": "Simple server listening for Report-To reports for Home Assistant",
+  "ports": {
+    "8080/tcp": 8080
+  },
+  "ports_description": {
+    "8080/tcp": "HTTP listen port"
+  },
+  "options": {
+    "log_level": "info"
+  },
+  "schema": {
+    "log_level": "list(trace|debug|info|notice|warning|error|fatal)?"
+  }
+}
